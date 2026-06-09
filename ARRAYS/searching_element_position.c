@@ -2,17 +2,17 @@
 int main()
 {
     int n;
-    printf("Enter the elements of the array : ");
+    printf("Enter the  total elements of the array : ");
     scanf("%d",&n);
     if(n<=0)
     {
-        printf("INVALID SIZE OF ARRAY");
+        printf("INVALID SIZE OF ARRAY\n");
         return 0;
     }
     int arr[n];
     for(int i=0;i<n;i++)
     {
-        printf("Enter the elements of the array %d : ",i+1);
+        printf("Enter the elements of the array : ");
         scanf("%d",&arr[i]);
     }
     int key;
@@ -24,13 +24,12 @@ int main()
         if(key==arr[i])
         {
             flag=1;
-            printf(" Position :%d",i);
+            printf(" Position :%d\n",i+1);
         }
     }
     if (flag==0)
     {
-        printf("NOT FOUND THE ELEMENT");
+        printf("NOT FOUND THE ELEMENT\n");
     }
     return 0;
-
 }
